@@ -68,10 +68,10 @@ public var fusumaCropImage: Bool  = true
 
 public var fusumaSavesImage: Bool = false
 
-public var fusumaCameraRollTitle = "CAMERA ROLL"
-public var fusumaCameraTitle     = "PHOTO"
+public var fusumaCameraRollTitle = "Camera Roll"
+public var fusumaCameraTitle     = "Photo"
 public var fusumaVideoTitle      = "VIDEO"
-public var fusumaTitleFont       = UIFont(name: "AvenirNext-DemiBold", size: 15)
+public var fusumaTitleFont       = UIFont.systemFont(ofSize: 15.0)
 
 public var fusumaTintIcons: Bool = true
 
