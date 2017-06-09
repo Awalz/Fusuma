@@ -71,7 +71,7 @@ public var fusumaSavesImage: Bool = false
 public var fusumaCameraRollTitle = "Camera Roll"
 public var fusumaCameraTitle     = "Photo"
 public var fusumaVideoTitle      = "VIDEO"
-public var fusumaTitleFont       = UIFont.systemFont(ofSize: 15.0)
+public var fusumaTitleFont       = UIFont.systemFont(ofSize: 17.0)
 
 public var fusumaTintIcons: Bool = true
 
