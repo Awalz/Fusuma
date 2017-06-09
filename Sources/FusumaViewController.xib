@@ -35,31 +35,17 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFH-FU-LPW" userLabel="Camera View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="691"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.86274509803921573" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-29-mUG" userLabel="Library View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="691"/>
-                    <color key="backgroundColor" red="0.85882352941176465" green="0.86274509803921573" blue="0.8666666666666667" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.86274509803921573" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-kc-jlJ" userLabel="Menu View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                     <subviews>
-                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dx0-Tt-oZs">
-                            <rect key="frame" x="8" y="20" width="40" height="44"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="40" id="PQP-9C-4h0"/>
-                                <constraint firstAttribute="height" constant="44" id="Ygl-n3-Z0d"/>
-                            </constraints>
-                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
-                            <state key="normal" image="ic_close"/>
-                            <state key="selected" image="ic_close"/>
-                            <state key="highlighted" image="ic_close"/>
-                            <connections>
-                                <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="rtM-1A-Fdg"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMERA ROLL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-Q8-Lgd">
-                            <rect key="frame" x="56" y="20.666666666666671" width="312" height="44"/>
+                            <rect key="frame" x="51" y="20.666666666666671" width="302" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="46U-KH-gCV"/>
                             </constraints>
@@ -68,10 +54,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iB-Jh-kTh">
-                            <rect key="frame" x="376" y="27" width="30" height="30"/>
+                            <rect key="frame" x="361" y="19.666666666666671" width="45" height="45"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="4aS-BG-rpd"/>
-                                <constraint firstAttribute="width" constant="30" id="NE8-9R-uXl"/>
+                                <constraint firstAttribute="height" constant="45" id="4aS-BG-rpd"/>
+                                <constraint firstAttribute="width" constant="45" id="NE8-9R-uXl"/>
                             </constraints>
                             <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                             <state key="normal" image="ic_check"/>
@@ -81,17 +67,31 @@
                                 <action selector="doneButtonPressed:" destination="-1" eventType="touchUpInside" id="Ym5-Qc-exH"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dx0-Tt-oZs">
+                            <rect key="frame" x="8" y="25" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="PQP-9C-4h0"/>
+                                <constraint firstAttribute="height" constant="35" id="Ygl-n3-Z0d"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                            <state key="normal" image="ic_close"/>
+                            <state key="selected" image="ic_close"/>
+                            <state key="highlighted" image="ic_close"/>
+                            <connections>
+                                <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="rtM-1A-Fdg"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.85882352941176465" green="0.86274509803921573" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="Dx0-Tt-oZs" firstAttribute="leading" secondItem="8ba-kc-jlJ" secondAttribute="leading" constant="8" id="51K-wb-k3T"/>
                         <constraint firstAttribute="height" constant="64" id="5ZE-04-Fz1"/>
-                        <constraint firstItem="cxN-Q8-Lgd" firstAttribute="centerY" secondItem="Dx0-Tt-oZs" secondAttribute="centerY" id="AtD-iB-P13"/>
                         <constraint firstAttribute="trailing" secondItem="5iB-Jh-kTh" secondAttribute="trailing" constant="8" id="CsQ-ni-3OY"/>
                         <constraint firstItem="cxN-Q8-Lgd" firstAttribute="leading" secondItem="Dx0-Tt-oZs" secondAttribute="trailing" constant="8" id="INH-fO-tBz"/>
                         <constraint firstItem="5iB-Jh-kTh" firstAttribute="leading" secondItem="cxN-Q8-Lgd" secondAttribute="trailing" constant="8" id="InH-Sz-8gz"/>
-                        <constraint firstItem="5iB-Jh-kTh" firstAttribute="centerY" secondItem="cxN-Q8-Lgd" secondAttribute="centerY" id="iyB-TX-Pwg"/>
-                        <constraint firstItem="Dx0-Tt-oZs" firstAttribute="top" secondItem="8ba-kc-jlJ" secondAttribute="top" constant="20" id="phx-7N-5Ks"/>
+                        <constraint firstAttribute="bottom" secondItem="cxN-Q8-Lgd" secondAttribute="bottom" id="xb2-zT-qDF"/>
+                        <constraint firstItem="5iB-Jh-kTh" firstAttribute="centerY" secondItem="cxN-Q8-Lgd" secondAttribute="centerY" id="yVa-tQ-29w"/>
+                        <constraint firstItem="Dx0-Tt-oZs" firstAttribute="centerY" secondItem="cxN-Q8-Lgd" secondAttribute="centerY" id="zuC-0h-Zzc"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cph-QM-jcJ">
@@ -165,8 +165,8 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_check" width="30" height="30"/>
-        <image name="ic_close" width="48" height="48"/>
+        <image name="ic_check" width="60" height="60"/>
+        <image name="ic_close" width="60" height="60"/>
         <image name="ic_insert_photo" width="36" height="36"/>
         <image name="ic_photo_camera" width="36" height="36"/>
         <image name="ic_videocam" width="36" height="36"/>

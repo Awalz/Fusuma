@@ -9,6 +9,21 @@
 import UIKit
 import Photos
 
+extension CGFloat {
+    static func screenSizes(iphone5: CGFloat, iphone6: CGFloat, iphone6Plus: CGFloat) -> CGFloat {
+        switch UIScreen.main.bounds.width {
+        case 320.0:
+            return iphone5
+        case 375.0:
+            return iphone6
+        case 414.0:
+            return iphone6Plus
+        default:
+            return iphone6Plus
+        }
+    }
+}
+
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     
   switch (lhs, rhs) {
@@ -71,7 +86,7 @@ public var fusumaSavesImage: Bool = false
 public var fusumaCameraRollTitle = "Camera Roll"
 public var fusumaCameraTitle     = "Photo"
 public var fusumaVideoTitle      = "VIDEO"
-public var fusumaTitleFont       = UIFont.systemFont(ofSize: 17.0)
+public var fusumaTitleFont       = UIFont.systemFont(ofSize: CGFloat.screenSizes(iphone5: 17.0, iphone6: 18.0, iphone6Plus: 18.0))
 
 public var fusumaTintIcons: Bool = true
 
@@ -637,3 +652,5 @@ private extension FusumaViewController {
         button.addBottomBorder(fusumaTintColor, width: 3)
     }
 }
+
+
