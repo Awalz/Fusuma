@@ -47,7 +47,6 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 }
 
 public protocol FusumaDelegate: class {
-    
     func fusumaImageSelected(_ image: UIImage, source: FusumaMode)
     func fusumaMultipleImageSelected(_ images: [UIImage], source: FusumaMode)
     func fusumaVideoCompleted(withFileURL fileURL: URL)
@@ -60,6 +59,10 @@ public extension FusumaDelegate {
     func fusumaDismissedWithImage(_ image: UIImage, source: FusumaMode) {}
     func fusumaClosed() {}
     func fusumaWillClosed() {}
+    func fusumaImageSelected(_ image: UIImage, source: FusumaMode) {}
+    func fusumaMultipleImageSelected(_ images: [UIImage], source: FusumaMode) {}
+    func fusumaVideoCompleted(withFileURL fileURL: URL) {}
+    func fusumaCameraRollUnauthorized() {}
 }
 
 public var fusumaBaseTintColor   = UIColor.hex("#FFFFFF", alpha: 1.0)
